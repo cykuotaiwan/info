@@ -20,6 +20,9 @@ func HandleMain(w http.ResponseWriter, r *http.Request) {
 func main() {
 	fs := http.FileServer(http.Dir("assets"))
 	http.Handle("/assets/", http.StripPrefix("/assets", fs))
+	data := http.FileServer(http.Dir("data"))
+	http.Handle("/data/", http.StripPrefix("/data", data))
+
 	http.HandleFunc("/", HandleMain)
 	fmt.Print("Starting server at port 8050\n")
 	if err := http.ListenAndServe(":8050", nil); err != nil {
