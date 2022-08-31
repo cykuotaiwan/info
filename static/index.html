@@ -1,10 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <title></title>
+        <meta charset="utf-8" />
+        <!-- Bootstrap CSS Lib -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+            crossorigin="anonymous"
+        />
+        <!-- Google Font Lib -->
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Archivo Black"
+        />
+        <!-- Button CSS Lib -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <!-- Custom CSS Lib -->
+        <link rel="stylesheet" href="/assets/templates/css/palettelist.css" />
+        <link rel="stylesheet" href="/assets/templates/css/style.css" />
+
+        <title>This is Chun-Yi Kuo</title>
     </head>
-    <body>
-        <h1>Hello</h1>
+
+    <body class="first-color primary-text-color">
+        <div id="profile">
+            <h1 id="name">ChunYi Kuo</h1>
+            <p id="title">Software Engineer, Enthusiastic Trader</p>
+            <button id="download-btn" class="btn">
+                <i class="fa fa-download"></i>&nbspDownload CV
+            </button>
+        </div>
+
+        <div id="information" class="second-color">
+            <div class="info-container">
+                <div id="info-desc">
+                    <h4>About me</h4>
+                    <p>
+                        Hi, this is Chun-Yi. I’m enthusiastic about solving
+                        problems and building applications that help people with
+                        their jobs. Sharing ideas and discussing with others
+                        always helps me find new aspects of certain topics. I
+                        also enjoy researching and trading in the stock market.
+                        My friend and I even create Stocker to automatically
+                        collect and filter financial statements for us.
+                    </p>
+                </div>
+                <div id="info-contact">
+                    <h4>Contact</h4>
+                    <table>
+                        <tr>
+                            <th>EMAIL:</th>
+                            <td>
+                                <a href="mailto: cykuotw45@gmail.com"
+                                    >cykuotw45@gmail.com</a
+                                >
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>TEL:</th>
+                            <td>
+                                <a href="tel:+14379748627">(+1) 437-974-8627</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div id="experience">
+            <h1>Experience</h1>
+            <div class="exp-container">
+                <div class="exp-title fourth-color" id="exp-title-tc">
+                    <h4>Software Engineer</h4>
+                    <p>2017 - 2021</p>
+                </div>
+                <div class="exp-desc">
+                    <h5>T&C Technologies Inc.</h5>
+                    <h6>Projects:</h6>
+                    <ul>
+                        <li>Radar Warning Receiver (RWR)</li>
+                        <li>Customized RF Measurement Systems</li>
+                    </ul>
+                    <h6>Tech Skills:</h6>
+                    <ul>
+                        <li>
+                            Experience in middle-large software system
+                            development
+                        </li>
+                        <li>Multithreaded pipeline structure</li>
+                        <li>Object oriented programming (OOP)</li>
+                        <li>
+                            C++ for compute intensive portion, LabVIEW for the
+                            rest
+                        </li>
+                    </ul>
+                    <h6>Soft Skills:</h6>
+                    <ul>
+                        <li>
+                            Leadership: led 5-10 colleagues complete the first
+                            self-made RWR system, mentoring summer internship
+                        </li>
+                        <li>
+                            Cross-disciplinary ability: responsible both
+                            hardware and software of the system
+                        </li>
+                        <li>
+                            Communication skills: on-site tech support and
+                            identify clients’ need at first place.
+                        </li>
+                        <li>
+                            Multitasking skills: experience in handling multiple
+                            projects simultaneously
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="second-color" id="education">
+            <h1>Education</h1>
+            <div class="edu-container">
+                <div class="edu-title fourth-color" id="edu-title-dipl">
+                    <h4>Advanced Diploma</h4>
+                    <p>2022 - 2024(expected)</p>
+                </div>
+                <div class="first-color edu-desc">
+                    <h5>Seneca College (Toronto, Canada)</h5>
+                    <p>
+                        Computer Programming & Analysis (CPA) <br />
+                        Major in software developing
+                    </p>
+                </div>
+            </div>
+            <div class="edu-container">
+                <div class="edu-title fourth-color" id="edu-title-mast">
+                    <h4>Master's Degree</h4>
+                    <p>2013 - 2015</p>
+                </div>
+                <div class="first-color edu-desc">
+                    <h5>National Cheng Kung University (Tainan, Taiwan)</h5>
+                    <p>
+                        BioMedical Engineering (BME) <br />
+                        Under the supervision of Dr. Cheng. <br />
+                        Thesis topic: bioimpedance technology
+                    </p>
+                    <p>
+                        Experience in: biosignal process, medical image
+                        processing
+                    </p>
+                </div>
+            </div>
+            <div class="edu-container">
+                <div class="edu-title fourth-color" id="edu-title-bach">
+                    <h4>Bachelor's Degree</h4>
+                    <p>2008 - 2013</p>
+                </div>
+                <div class="edu-desc first-color">
+                    <h5>National Chiao Tung University (Hsinchu, Taiwan)</h5>
+                    <p>
+                        Electronic Engineering (EE) <br />
+                        Major in semiconductor fabrication
+                    </p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
