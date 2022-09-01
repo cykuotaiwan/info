@@ -1,291 +1,291 @@
 div {
-  padding-top: 3%;
-  padding-bottom: 3%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Profile Section*/
 #profile {
-  margin: auto;
-  padding-top: 3%;
-  text-align: center;
+    margin: auto;
+    padding-top: 3%;
+    text-align: center;
 }
 
 #profile h1 {
-  margin-top: 0.2em;
+    margin-top: 0.2em;
 
-  font-family: "Archivo Black";
-  font-weight: 800;
-  font-size: 5em;
+    font-family: "Archivo Black";
+    font-weight: 800;
+    font-size: 5em;
 }
 
 #profile p {
-  font-size: larger;
+    font-size: larger;
 }
 
 /* Buttons */
 .btn {
-  background: #3f72af;
-  color: white;
-  padding: 8px 25px;
-  font-size: 1em;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-  border-radius: 2em;
+    background: #3f72af;
+    color: white;
+    padding: 8px 25px;
+    font-size: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    border-radius: 2em;
 }
 
 .btn:hover {
-  background: #112d4e;
-  color: white;
+    background: #112d4e;
+    color: white;
 }
 
 /* Information Section */
 #information {
-  margin: auto;
-  padding-top: 3%;
-  text-align: center;
+    margin: auto;
+    padding-top: 3%;
+    text-align: center;
 }
 
 .info-container {
-  display: flex;
-  max-width: 80%;
+    display: flex;
+    max-width: 80%;
 
-  margin: auto;
-  margin-top: 2em;
-  margin-bottom: 2em;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
 
-  padding: 0;
+    padding: 0;
 }
 
 .info-container #info-desc {
-  flex: 60%;
+    flex: 60%;
 
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 4em;
-  padding-right: 3em;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 4em;
+    padding-right: 3em;
 
-  line-height: 1.5;
-  text-align: justify;
+    line-height: 1.5;
+    text-align: justify;
 }
 
 .info-container #info-contact {
-  flex: 40%;
+    flex: 40%;
 
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 1em;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 1em;
 
-  text-align: justify;
+    text-align: justify;
 }
 
 #info-desc h4,
 #info-contact h4 {
-  font-weight: 800;
+    font-weight: 800;
 }
 
 #info-contact table {
-  width: 70%;
+    width: 70%;
 }
 
 #info-contact th {
-  height: 2em;
+    height: 2em;
 }
 
 /* Experience Section */
 #experience {
-  margin: auto;
-  padding-top: 3%;
-  text-align: center;
+    margin: auto;
+    padding-top: 3%;
+    text-align: center;
 }
 
 .exp-container {
-  display: flex;
-  max-width: 80%;
+    display: flex;
+    max-width: 80%;
 
-  margin: auto;
-  margin-top: 2em;
-  margin-bottom: 2em;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
 
-  padding: 0;
+    padding: 0;
 
-  border: #bdbdbd;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 0.5em;
+    border: #bdbdbd;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.5em;
 
-  box-shadow: 0.2em 0.2em 0.1em 0.1em #bdbdbd;
+    box-shadow: 0.2em 0.2em 0.1em 0.1em #bdbdbd;
 }
 
 .exp-container .exp-title {
-  flex: 5%;
+    flex: 5%;
 
-  padding: 0;
+    padding: 0;
 
-  max-width: 30%;
-  max-height: 100%;
+    max-width: 30%;
+    max-height: 100%;
 
-  color: white;
+    color: white;
 }
 
 .exp-container .exp-desc {
-  flex: 30%;
+    flex: 30%;
 
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 
-  padding-top: 1em;
-  padding-left: 2em;
+    padding-top: 1em;
+    padding-left: 2em;
 
-  border-bottom-right-radius: 0.3em;
-  border-top-right-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+    border-top-right-radius: 0.3em;
 
-  text-align: left;
+    text-align: left;
 }
 
 .exp-container #exp-title-tc {
-  padding-top: 12em;
+    padding-top: 12em;
 }
 
 /* Education Section */
 #education {
-  margin: auto;
-  padding-top: 3%;
-  text-align: center;
+    margin: auto;
+    padding-top: 3%;
+    text-align: center;
 }
 
 .edu-container {
-  display: flex;
-  max-width: 80%;
+    display: flex;
+    max-width: 80%;
 
-  margin: auto;
-  margin-top: 2em;
-  margin-bottom: 2em;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
 
-  padding: 0;
+    padding: 0;
 
-  border: #bdbdbd;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 0.5em;
+    border: #bdbdbd;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.5em;
 
-  box-shadow: 0.2em 0.2em 0.1em 0.1em #bdbdbd;
+    box-shadow: 0.2em 0.2em 0.1em 0.1em #bdbdbd;
 }
 
 .edu-container .edu-title {
-  flex: 5%;
-  max-width: 30%;
-  max-height: 100%;
+    flex: 5%;
+    max-width: 30%;
+    max-height: 100%;
 
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 
-  border-top-left-radius: 0.3em;
-  border-bottom-left-radius: 0.3em;
+    border-top-left-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
 
-  color: white;
+    color: white;
 }
 
 .edu-container #edu-title-bach {
-  padding-top: 1.5em;
+    padding-top: 1.5em;
 }
 
 .edu-container #edu-title-mast {
-  padding-top: 4em;
+    padding-top: 4em;
 }
 
 .edu-container #edu-title-dipl {
-  padding-top: 1.5em;
+    padding-top: 1.5em;
 }
 
 .edu-container .edu-desc {
-  flex: 30%;
+    flex: 30%;
 
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 
-  padding-top: 1em;
-  padding-left: 2em;
+    padding-top: 1em;
+    padding-left: 2em;
 
-  border-bottom-right-radius: 0.3em;
-  border-top-right-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+    border-top-right-radius: 0.3em;
 
-  text-align: left;
+    text-align: left;
 }
 
 /* Project Section */
 #projects {
-  margin: auto;
-  padding-top: 3%;
-  text-align: center;
+    margin: auto;
+    padding-top: 3%;
+    text-align: center;
 }
 
 .proj-container {
-  display: flex;
-  max-width: 80%;
+    display: flex;
+    max-width: 80%;
 
-  margin: auto;
-  margin-top: 2em;
-  margin-bottom: 2em;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
 
-  padding: 0;
+    padding: 0;
 
-  border: #bdbdbd;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 0.5em;
+    border: #bdbdbd;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.5em;
 
-  box-shadow: 0.2em 0.2em 0.1em 0.1em #bdbdbd;
+    box-shadow: 0.2em 0.2em 0.1em 0.1em #bdbdbd;
 }
 
 .proj-container .proj-title {
-  flex: 5%;
-  max-width: 35%;
-  max-height: 100%;
+    flex: 5%;
+    max-width: 35%;
+    max-height: 100%;
 
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 
-  border-top-left-radius: 0.3em;
-  border-bottom-left-radius: 0.3em;
+    border-top-left-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
 
-  color: white;
+    color: white;
 }
 
 .proj-container #proj-title-rwr {
-  padding-top: 3em;
+    padding-top: 3em;
 }
 
 .proj-container #proj-title-stocker {
-  padding-top: 3.5em;
+    padding-top: 3.5em;
 }
 
 .proj-container .proj-desc {
-  flex: 30%;
+    flex: 30%;
 
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 
-  padding-top: 1em;
-  padding-left: 2em;
-  padding-right: 2em;
+    padding-top: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
 
-  border-bottom-right-radius: 0.3em;
-  border-top-right-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+    border-top-right-radius: 0.3em;
 
-  text-align: justify;
+    text-align: justify;
 }
 
 /* Footer Section */
 #footer footer {
-  position: fixed;
-  left: 0;
-  bottom: -0.6em;
-  width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: -0.6em;
+    width: 100%;
 
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  padding-top: 0.2em;
-  color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    padding-top: 0.2em;
+    color: #fff;
 }
