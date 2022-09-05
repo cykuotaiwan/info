@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <!-- Bootstrap CSS Lib -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+            crossorigin="anonymous"
+        />
+        <!-- Custom CSS Lib -->
+        <link rel="stylesheet" href="/assets/templates/css/palettelist.css" />
+        <link rel="stylesheet" href="/assets/templates/css/style-rwr.css" />
+        <title>RWR</title>
+    </head>
+    <body class="first-color primary-text-color">
+        <h1>Radar Warning Receiver (RWR)</h1>
+        <div id="intro">
+            <h4>Introduction</h4>
+            <p>
+                RWR is a radar detecting system that can extract several
+                features within radar signals thus identifying certain radar
+                emitters. This is the first highly self-design system of my
+                previous company. My role in this project was to design a
+                classifying algorithm and the entire software structure.
+                Moreover, I was the project coordinator and owner, my
+                responsibility was to coordinate among colleagues and clients,
+                and get my hands dirty.
+            </p>
+        </div>
+
+        <div id="hardware">
+            <h4>Hardware Sketch</h4>
+            <img
+                src="/assets/img/rwr_hardware_sketch.svg"
+                alt="hardware sketch"
+            />
+            <p>
+                Radar signal is pulsed radio frequency (RF) signal. Therefore,
+                after radar signal is collected by receiver antenna and fed into
+                receiver module, pulse characteristics and RF characteristics
+                are extracted. FPGA module then processes these characteristics
+                and produces pulse descriptive words (PDWs) that represent radar
+                signals. Computing module analysis PDWs, extract features of the
+                radar signal, format the information into emitter report, and
+                pass the report to the monitor module. Finally, the operator
+                then identifies the emitters by observing the report shown on
+                the monitor.
+            </p>
+        </div>
+
+        <div id="software">
+            <h4>Software Sketch</h4>
+            <img
+                src="/assets/img/rwr_software_sketch.svg"
+                alt="software sketch"
+            />
+            <p>
+                As previously stated, the radar signal is converted into PDWs by
+                FPGA module and passed to the computing module for further
+                analysis. All PDWs are assumed that originate from multiple
+                radar emitter sources before being processed by the computing
+                module. The Signal isolator is implemented with real-time
+                clustering method to isolate a single emitter source. The
+                feature extractor then extracts several features, such as PRI
+                type, RF jump type, and scan type, from each isolated PDWs.
+                Finally, all features are combined into an emitter report by the
+                report formatter and sent to the client’s monitor module.
+            </p>
+        </div>
+
+        <div id="software-tech">
+            <h4>Software Technologies</h4>
+            <ul>
+                <li>
+                    Most compute-intensive parts, such as signal isolator, are
+                    implemented by C++, while others are implemented by LabVIEW.
+                </li>
+                <li>Multithreaded pipeline structure is adopted.</li>
+                <li>Object-oriented programming (OOP)</li>
+            </ul>
+        </div>
+
+        <div id="footer">
+            <footer class="fourth-color">
+                <p>© 2022 Chun-Yi Kuo</p>
+            </footer>
+        </div>
+    </body>
+</html>
