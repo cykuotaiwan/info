@@ -14,8 +14,79 @@
         <link rel="stylesheet" href="/assets/templates/css/style-stocker.css" />
         <title>Stocker</title>
     </head>
-    <body>
-        <h1></h1>
+    <body class="first-color primary-text-color">
+        <h1>Stocker</h1>
+        <div id="intro">
+            <h4>Introduction</h4>
+            <p>
+                Stocker is a web service that automatically collects, updates,
+                and screens financial statements of all listed and OTC stocks in
+                the Taiwan stock market. My friend Raymond and I started this
+                project from scratch in 2019 to save our time from processing
+                thousands of financial statements every quarter. Since we are
+                both amateur investors and professional engineers, we decide to
+                design our system to automate the routine process.
+            </p>
+        </div>
 
+        <div id="sketch">
+            <h4>Quick Sketch</h4>
+            <img src="/assets/img/stocker_sketch.svg" alt="stocker sketch" />
+            <p>
+                Stocker is separated into three sub-projects: crawler, server,
+                and frontend. Stocker server is based on Python Flask and
+                SQLAlchemy. It handles all RESTful APIs and ORM with MySQL.
+                Crawler is based on Python and the BueatifulSoup module. It
+                collects financial statements from Taiwan Stock Exchange (TWSE)
+                and news from media websites. The frontend service is still in
+                beta version which currently uses React as its framework.
+            </p>
+            <p>
+                We deploy these services on an AWS instance. With crontab, a
+                daily routine in the crawler would be triggered periodically and
+                pass the data to the server with the private channel. Once the
+                server receives data, it would update the data into several
+                databases, filter recent data with private criteria, and
+                finally, push recommendations or notifications to messengers
+                such as Line and Telegram.
+            </p>
+            <p>
+                We used to spend at least 5 hours each day for a whole week
+                during the earning season only to screen the report of thousands
+                of companies. With the help of the stocker, the earning season
+                routine has significantly shrunk to 3 hours. Furthermore, since
+                we have all data, we can build any model at our will.
+            </p>
+        </div>
+
+        <div id="links">
+            <h4>GitHub Links</h4>
+            <ul>
+                <li>
+                    stocker-crawler:
+                    <a href="https://github.com/cykuotaiwan/stocker-crawler"
+                        >https://github.com/cykuotaiwan/stocker-crawler</a
+                    >
+                </li>
+                <li>
+                    stocker-server:
+                    <a href="https://github.com/seal0112/stocker"
+                        >https://github.com/seal0112/stocker</a
+                    >
+                </li>
+                <li>
+                    stocker-frontend:
+                    <a href="https://github.com/seal0112/react-stocker"
+                        >https://github.com/seal0112/react-stocker</a
+                    >
+                </li>
+            </ul>
+        </div>
+
+        <div id="footer">
+            <footer class="fourth-color">
+                <p>© 2022 Chun-Yi Kuo</p>
+            </footer>
+        </div>
     </body>
 </html>
