@@ -1,5 +1,6 @@
 window.onload = function () {
     HandleDownloadCV();
+    HandleDownloadTranscript();
     HandleTitleAlignVerticle();
 };
 
@@ -10,11 +11,20 @@ window.onresize = function () {
 };
 
 function HandleDownloadCV() {
-    const download = document.querySelector("#download-btn");
+    const download = document.querySelector("#download-cv-btn");
 
     download.addEventListener("click", function () {
         console.log("here");
         window.open("data/CV-ChunYiKuo.pdf");
+    });
+}
+
+function HandleDownloadTranscript() {
+    const download = document.querySelector("#download-trans-btn");
+
+    download.addEventListener("click", function () {
+        console.log("here");
+        window.open("data/Transcript.pdf");
     });
 }
 
