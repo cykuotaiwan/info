@@ -24,7 +24,7 @@
                 the Taiwan stock market. My friend Raymond and I started this
                 project from scratch in 2019 to save our time from processing
                 thousands of financial statements every quarter. Since we are
-                both amateur investors and professional engineers, we decide to
+                both amateur investors and professional engineers, we decided to
                 design our system to automate the routine process.
             </p>
         </div>
@@ -34,7 +34,7 @@
             <img src="/assets/img/stocker_sketch.svg" alt="stocker sketch" />
             <p>
                 Stocker is separated into three sub-projects: crawler, server,
-                and frontend. Stocker server is based on Python Flask and
+                and frontend. The Stocker server is based on Python Flask and
                 SQLAlchemy. It handles all RESTful APIs and ORM with MySQL.
                 Crawler is based on Python and the BueatifulSoup module. It
                 collects financial statements from Taiwan Stock Exchange (TWSE)
@@ -45,17 +45,18 @@
                 We deploy these services on an AWS instance. With crontab, a
                 daily routine in the crawler would be triggered periodically and
                 pass the data to the server with the private channel. Once the
-                server receives data, it would update the data into several
-                databases, filter recent data with private criteria, and
-                finally, push recommendations or notifications to messengers
+                server receives data, it updates the data into several
+                databases, filters recent data with private criteria, and
+                finally, pushes recommendations or notifications to messengers
                 such as Line and Telegram.
             </p>
             <p>
                 We used to spend at least 5 hours each day for a whole week
-                during the earning season only to screen the report of thousands
-                of companies. With the help of the stocker, the earning season
-                routine has significantly shrunk to 3 hours. Furthermore, since
-                we have all data, we can build any model at our will.
+                during the earning season only to screen the reports of
+                thousands of companies. With the help of the stocker, the
+                earning season routine has significantly shrunk to 3 hours.
+                Furthermore, since we have all the data, we can build any model
+                at our will.
             </p>
         </div>
 
